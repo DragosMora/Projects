@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Avalonia" Version="11.2.6" />
+      <PackageReference Include="Avalonia.Desktop" Version="11.2.6" />
+      <PackageReference Include="Avalonia.Themes.Fluent" Version="11.2.6" />
+      <PackageReference Include="log4net" Version="3.0.4" />
+      <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.3" />
+      <PackageReference Include="NLog" Version="5.4.0" />
+      <PackageReference Include="NUnit" Version="4.3.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="bin\Debug\net9.0\database.properties" />
+      <None Update="log4.config">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="controllers\App.axaml.cs">
+        <DependentUpon>App.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="controllers\MainWindow.axaml.cs">
+        <DependentUpon>MainWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
+
+
+</Project>

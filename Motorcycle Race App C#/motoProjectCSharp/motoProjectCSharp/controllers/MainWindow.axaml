@@ -1,0 +1,60 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="motoProjectCSharp.controllers.MainWindow"
+        Title="Races"
+        Width="600" Height="400">
+    <StackPanel>
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Width="120" Height="40" Margin="10" 
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontWeight="Bold"
+                    CornerRadius="20">
+                <Button.Content>
+                    <TextBlock Text="Races" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button.Content>
+            </Button>
+        
+            <Button Width="120" Height="40" Margin="10" 
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Click="SwitchToTeamsWindow"
+                    FontWeight="Bold"
+                    CornerRadius="20">
+                <Button.Content>
+                    <TextBlock Text="Teams" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button.Content>
+            </Button>
+        
+            <Button Width="120" Height="40" Margin="10" 
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Click="SwitchToParticipantsWindow"
+                    FontWeight="Bold"
+                    CornerRadius="20">
+                <Button.Content>
+                    <TextBlock Text="Participants" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button.Content>
+            </Button>
+        
+            <Button Width="120" Height="40" Margin="10" 
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Click="SwitchToLoginWindow"
+                    FontWeight="Bold"
+                    CornerRadius="20">
+                <Button.Content>
+                    <TextBlock Text="Exit" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+        
+        
+        
+        <ListBox x:Name="ActiveRaces" Width="500" Height="300">
+            
+        </ListBox>
+        
+    </StackPanel>
+</Window>
