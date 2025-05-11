@@ -1,0 +1,21 @@
+[2024-06-05 10:58:06] [info] Start Program:
+Path:"C:\UBB_INFO\Sem2\OOP\lab10-11\x64\Debug\lab10-11.exe"
+Arguments:
+Working directory: "C:\UBB_INFO\Sem2\OOP\lab10-11\"
+Modules: Selected: C:\UBB_INFO\Sem2\OOP\lab10-11\x64\Debug\lab10-11.exe Excluded: 
+Sources: Selected: C:\UBB_INFO\Sem2\OOP\lab10-11 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Dragos Mora\AppData\Local\Temp\0mlo4ooe.e2w 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-06-05 10:58:06] [info] Module: C:\UBB_INFO\Sem2\OOP\lab10-11\x64\Debug\lab10-11.exe is selected because it matches selected pattern: C:\UBB_INFO\Sem2\OOP\lab10-11\x64\Debug\lab10-11.exe
+[2024-06-05 10:58:07] [info] ----------------------------------------------------
+[2024-06-05 10:58:07] [info] Coverage binary generated in file: C:\Users\Dragos Mora\AppData\Local\Temp\0mlo4ooe.e2w
+[2024-06-05 10:58:07] [info] ----------------------------------------------------

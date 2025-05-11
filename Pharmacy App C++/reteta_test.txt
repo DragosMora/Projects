@@ -1,0 +1,3 @@
+Dulcolax,19.99,SUA,Cacao
+Dulcolax,21.99,CFR,Speis
+Dulcosolvan,21.99,CFR,Cacao
