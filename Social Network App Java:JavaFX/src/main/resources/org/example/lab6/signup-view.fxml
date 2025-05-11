@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab6.SignupController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+      <Label text="buddy" textFill="#00a1ff">
+         <font>
+            <Font name="Avenir Book" size="45.0" />
+         </font>
+      </Label>
+      <TextField fx:id="signUpUserId" promptText="Enter user id">
+         <font>
+            <Font name="Apple Braille" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="signUpName" prefHeight="0.0" prefWidth="584.0" promptText="Enter name">
+         <font>
+            <Font name="Apple Braille" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="signUpGender" promptText="Enter gender">
+         <font>
+            <Font name="Apple Braille" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="signUpAge" promptText="Enter age">
+         <font>
+            <Font name="Apple Braille" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="signUpLocation" promptText="Enter location">
+         <font>
+            <Font name="Apple Braille" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="signUpPhone" promptText="Enter phone">
+         <font>
+            <Font name="Apple Braille" size="13.0" />
+         </font></TextField>
+      <TextArea fx:id="signUpDescription" prefHeight="200.0" prefWidth="200.0" promptText="Enter description">
+         <font>
+            <Font name="Apple Braille" size="13.0" />
+         </font></TextArea>
+      <HBox alignment="CENTER" prefHeight="46.0" prefWidth="584.0" spacing="10.0">
+         <children>
+            <Button fx:id="backButtonScene2" mnemonicParsing="false" onAction="#switchToLoginScene" text="Back">
+               <font>
+                  <Font name="Apple Braille" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#signUpUser" style="-fx-background-color: #00a1ff;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Apple Braille" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab6.AppController">
+   <children>
+      <Label text="buddy" textFill="#00a1ff">
+         <font>
+            <Font name="Avenir Book" size="25.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label fx:id="usernameLabel" text="username">
+               <font>
+                  <Font name="Apple Braille" size="13.0" />
+               </font>
+            </Label>
+            <StackPane prefHeight="28.0" prefWidth="51.0">
+               <children>
+                  <Circle fill="#00a1ff" radius="14.0" stroke="#00a1ff" strokeType="INSIDE" />
+                  <Label fx:id="requestsNotification" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Apple Braille" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#switchToLoginScene" text="Log out">
+               <font>
+                  <Font name="Apple Braille" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="115.0">
+         <children>
+            <TextField fx:id="userSearchField" promptText="Search for a user">
+               <font>
+                  <Font name="Apple Braille" size="13.0" />
+               </font>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="43.0" prefWidth="560.0" spacing="190.0">
+         <children>
+            <Label text="Friends">
+               <font>
+                  <Font name="Apple Braille" size="16.0" />
+               </font>
+            </Label>
+            <Label text="Requests">
+               <font>
+                  <Font name="Apple Braille" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="259.0" prefWidth="560.0" spacing="50.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0">
+               <children>
+                  <ListView fx:id="friendsListView" prefHeight="200.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#previousPage" text="Back">
+                           <font>
+                              <Font name="Apple Braille" size="13.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="pagesLabel" text="pg_nr/pg_total">
+                           <font>
+                              <Font name="Apple Braille" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#nextPage" text="Next">
+                           <font>
+                              <Font name="Apple Braille" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="50.0" right="20.0" top="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <ListView fx:id="requestsListView" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="560.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#deleteFromList" text="Delete">
+               <font>
+                  <Font name="Apple Braille" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#requestFriend" text="Add new friend">
+               <font>
+                  <Font name="Apple Braille" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#acceptFriend" text="Accept request">
+               <font>
+                  <Font name="Apple Braille" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#rejectFriend" text="Reject request">
+               <font>
+                  <Font name="Apple Braille" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToChatScene" text="Chat">
+               <font>
+                  <Font name="Apple Braille" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

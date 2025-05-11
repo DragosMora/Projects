@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab6.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <Label text="buddy" textFill="#00a1ff">
+      <font>
+         <Font name="Avenir Book" size="45.0" />
+      </font>
+   </Label>
+   <TextField fx:id="loginUserId" promptText="Enter user id">
+      <font>
+         <Font name="Apple Braille" size="13.0" />
+      </font></TextField>
+   <HBox alignment="CENTER" prefHeight="1.0" prefWidth="133.0" spacing="10.0">
+      <children>
+         <Button fx:id="signUpButtonScene1" mnemonicParsing="false" onAction="#switchToSignupScene" text="Sign Up">
+            <font>
+               <Font name="Apple Braille" size="13.0" />
+            </font></Button>
+         <Button mnemonicParsing="false" onAction="#switchToMainScene" style="-fx-background-color: #00a1ff;" text="Log In" textFill="WHITE">
+            <font>
+               <Font name="Apple Braille" size="13.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+</VBox>
